@@ -1,0 +1,115 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background: linear-gradient(140deg, #ff0000, #000000); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  height: 100vh;
+}
+
+.searchContainer {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #ff0000;
+  font-weight: bolder;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.error {
+  background-color: #ff6666;
+  color: #000000;
+}
+
+.success {
+  background-color: #ffcccc;
+  color: #ff0000;
+  font-weight: bolder;
+}
+
+.userList {
+  list-style-type: none;
+  padding: 0;
+  height: 400px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.userItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.profilePicture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sendRequestButton {
+  white-space: nowrap;
+  background-color: black;
+  color: #ff0000;
+  padding: 1vh;
+  border-radius: 5px;
+  border: none;
+}
+
+ 
+@keyframes errorAnimation {
+  0% {
+    background-color: #ff6666;
+    color: #000000;
+  }
+  100% {
+    background-color: #000000;
+    color: #ff6666;
+  }
+}
+
+@keyframes successAnimation {
+  0% {
+    background-color: #ffcccc;
+    color: #ff0000;
+  }
+  100% {
+    background-color: #ff0000;
+    color: #ffcccc;
+  }
+}

@@ -1,0 +1,94 @@
+.modal {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; 
+    background-color: rgba(0, 0, 0, 0.7);  
+    z-index: 1000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background: linear-gradient(135deg, #000000, #e50914); 
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e50914; 
+    width: 100%; 
+    max-width: 600px; 
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .close {
+    color: rgb(238, 209, 209);
+    float: right;
+    font-size: 28px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: white; 
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .modalContent h2 {
+    color: #e50914; 
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: large;
+  }
+  
+  .modalContent ul {
+    list-style-type: none;
+  }
+  
+  .modalContent ul li {
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: bolder;
+    color: white; 
+    background-color: transparent; 
+    padding: 1px;
+    border-radius: 4px;
+  }
+
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .like{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #444;
+  }
